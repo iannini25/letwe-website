@@ -1,0 +1,16 @@
+LETWE — pasta assets/video/
+=================================
+
+Arquivo: letwe-hero.mp4
+- É o VÍDEO-FONTE usado para gerar os frames da hero (scroll-vídeo).
+- O SITE NÃO usa este .mp4 em tempo real: ele toca a sequência de imagens em
+  assets/frames-video/ (desktop) e assets/frames-mobile/ (mobile), que JÁ estão geradas.
+
+Quero regerar os frames (ex.: troquei o vídeo):
+1) Substitua este arquivo por outro chamado  letwe-hero.mp4
+2) Rode na raiz do projeto:  python3 tools/gerar_frames_video.py
+   (precisa de Python + FFmpeg/Pillow; usa o método cinemagraph por máscara:
+    fundo fiel da foto + céu/veículos do vídeo)
+
+Observação: a imagem da hero é de logística (porto/rodovia) e foi mantida de
+propósito — combina com o posicionamento da Letwe.

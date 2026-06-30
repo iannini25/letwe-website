@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Letwe · Transformação digital na logística</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Transformação digital na logística: GTI PLUG, COSMOS, UNIVEXUS e ABUNDANCE, um ecossistema que otimiza tempo, recursos e custos da sua operação." />
+  <meta name="theme-color" content="#613F92" />
+  <link rel="canonical" href="https://letwe.com.br/" />
+
+  <!-- Favicons / ícones -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://letwe.com.br/" />
+  <meta property="og:site_name" content="LETWE · Transformação digital na logística" />
+  <meta property="og:title" content="Letwe · Transformação digital na logística" />
+  <meta property="og:description" content="Um ecossistema de soluções que impacta positivamente a operação dos nossos clientes, otimizando tempo, recursos, custos e inovação." />
+  <meta property="og:image" content="https://letwe.com.br/assets/img/poster.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Letwe · Transformação digital na logística" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Letwe · Transformação digital na logística" />
+  <meta name="twitter:description" content="Um ecossistema de soluções (GTI PLUG, COSMOS, UNIVEXUS e ABUNDANCE) que otimiza tempo, recursos e custos da sua operação." />
+  <meta name="twitter:image" content="https://letwe.com.br/assets/img/poster.jpg" />
+  <meta name="twitter:image:alt" content="Letwe · Transformação digital na logística" />
+
+  <!-- Anti-FOUC + preferências -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduced');
+        var lang = localStorage.getItem('letwe-lang');
+        if (lang === 'en') d.setAttribute('lang', 'en');
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Fontes: Poppins (display) + Roboto (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Dados estruturados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "name": "Letwe", "url": "https://letwe.com.br/", "logo": "https://letwe.com.br/assets/img/apple-touch-icon.png", "description": "Transformação digital na logística: um ecossistema de soluções (GTI PLUG, COSMOS, UNIVEXUS, ABUNDANCE) que otimiza tempo, recursos e custos da operação." },
+      { "@type": "WebSite", "name": "Letwe", "url": "https://letwe.com.br/", "inLanguage": "pt-BR" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="nav" id="nav" aria-label="Navegação principal">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Letwe, página inicial">
+        <img class="brand__logo brand__logo--light" src="assets/img/letwe-logo-light.svg" alt="Letwe" width="132" height="45" />
+        <img class="brand__logo brand__logo--dark"  src="assets/img/letwe-logo.svg"       alt="Letwe" width="132" height="45" />
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#solucoes" data-i18n="nav.solutions">Soluções</a>
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#clientes" data-i18n="nav.clients">Clientes</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" class="lang__btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+          <span class="lang__sep" aria-hidden="true"></span>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <a class="nav__cta" href="https://api.whatsapp.com/send?phone=5531971326885&text=Ol%C3%A1!%20Estava%20no%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Letwe." target="_blank" rel="noopener" data-i18n="nav.cta">Fale com a gente</a>
+      </nav>
+
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================ HERO ============================= -->
+  <!-- Seção mais alta que a tela; o bloco interno é "sticky" e o canvas
+       toca a sequência de frames (scroll-vídeo) conforme a página rola. -->
+  <section class="hero" id="hero">
+    <span id="top"></span>
+    <div class="hero__sticky">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+      <div class="hero__scrim hero__scrim--top" aria-hidden="true"></div>
+      <div class="hero__scrim hero__scrim--bottom" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <!-- Conteúdo: centralizado e um pouco acima do centro -->
+      <div class="hero__content" id="heroContent">
+        <p class="kicker reveal">
+          <span class="kicker__dot" aria-hidden="true"></span>
+          <span data-i18n="hero.kicker">Transformação digital na logística</span>
+        </p>
+
+        <h1 class="hero__title reveal" data-i18n="hero.title">
+          Aceleramos a transformação<br>digital na <em>logística</em>.
+        </h1>
+
+        <p class="hero__sub reveal" data-i18n="hero.sub">
+          Um ecossistema de soluções que otimiza tempo, recursos e custos na operação
+          dos nossos clientes, movido por muita inovação e tecnologia.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary"
+             href="https://api.whatsapp.com/send?phone=5531971326885&text=Ol%C3%A1!%20Quero%20acelerar%20a%20transforma%C3%A7%C3%A3o%20digital%20da%20minha%20opera%C3%A7%C3%A3o%20com%20a%20Letwe."
+             target="_blank" rel="noopener">
+            <span data-i18n="hero.cta1">Fale com a gente</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#solucoes">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v12M2.5 8.5 8 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="hero.cta2">Conheça as soluções</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Faixa de credibilidade na base da hero -->
+      <dl class="hero__status reveal" aria-label="Por que a Letwe">
+        <div class="stat">
+          <dt class="stat__v">+10<i>anos</i></dt>
+          <dd class="stat__l" data-i18n="hero.stat1">movendo a logística</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__v">4</dt>
+          <dd class="stat__l" data-i18n="hero.stat2">soluções integradas</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__v">BR<i>+mundo</i></dt>
+          <dd class="stat__l" data-i18n="hero.stat3">operações que escalam</dd>
+        </div>
+      </dl>
+
+      <div class="scrollcue" id="scrollCue" aria-hidden="true">
+        <span data-i18n="hero.scroll">role para conhecer</span>
+        <svg viewBox="0 0 16 24"><path d="M8 2v16M3 13l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ MAIN ============================= -->
+  <main id="main">
+
+    <!-- ===================== SOLUÇÕES ===================== -->
+    <section class="section section--solucoes" id="solucoes">
+      <div class="container">
+        <header class="sec-head r-up">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span data-i18n="sol.eyebrow">Nosso ecossistema</span></p>
+          <h2 class="sec-title" data-i18n="sol.title">Soluções que promovem a verdadeira <em>transformação digital na logística</em></h2>
+          <p class="sec-lead" data-i18n="sol.lead">Quatro plataformas que conversam entre si para otimizar cada elo da sua operação, do armazém à frota, do time ao impacto ambiental.</p>
+        </header>
+
+        <div class="sol-grid">
+          <!-- GTI PLUG -->
+          <article class="sol-card r-up" data-accent="violet">
+            <div class="sol-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="6" y="9" width="36" height="30" rx="2.5" stroke="currentColor" stroke-width="2"/>
+                <path d="M6 18h36M14 9v9M24 9v9M34 9v9" stroke="currentColor" stroke-width="2"/>
+                <rect class="pop" x="11" y="23" width="9" height="11" rx="1.4" fill="currentColor" opacity=".14"/>
+                <rect class="pop" x="22.5" y="23" width="9" height="11" rx="1.4" stroke="currentColor" stroke-width="2"/>
+                <path class="pop-neon" d="M30 28.5h9M35.5 25l3.5 3.5-3.5 3.5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="sol-card__name">GTI PLUG</h3>
+            <p class="sol-card__tag" data-i18n="sol.gtiplug.tag">WMS · Gestão de armazém</p>
+            <p class="sol-card__desc" data-i18n="sol.gtiplug.desc">Plataforma para gestão estratégica de armazenagem e movimentação de produtos: controle de estoque, endereçamento e produtividade em tempo real.</p>
+            <a class="sol-card__link" href="https://conteudo.letwe.com.br/gtiplug-gestao-de-estoque-e-armazem" target="_blank" rel="noopener"><span data-i18n="sol.know">Conhecer</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+
+          <!-- COSMOS -->
+          <article class="sol-card r-up" data-accent="violet">
+            <div class="sol-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <ellipse cx="24" cy="24" rx="19" ry="8" stroke="currentColor" stroke-width="2"/>
+                <ellipse class="pop" cx="24" cy="24" rx="8" ry="19" stroke="currentColor" stroke-width="2" opacity=".4" transform="rotate(60 24 24)"/>
+                <circle cx="24" cy="24" r="4.5" fill="currentColor" opacity=".14"/>
+                <circle cx="24" cy="24" r="4.5" stroke="currentColor" stroke-width="2"/>
+                <circle class="pop-neon-fill" cx="42.4" cy="20" r="2.6"/>
+                <circle class="pop-neon-fill" cx="8" cy="29" r="2"/>
+              </svg>
+            </div>
+            <h3 class="sol-card__name">COSMOS</h3>
+            <p class="sol-card__tag" data-i18n="sol.cosmos.tag">Smart fleet · Frotas</p>
+            <p class="sol-card__desc" data-i18n="sol.cosmos.desc">Solução smart fleet para monitoramento e otimização de frotas de forma integrada: telemetria, rotas e custos sob controle numa só visão.</p>
+            <a class="sol-card__link" href="#contato"><span data-i18n="sol.know">Conhecer</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+
+          <!-- UNIVEXUS -->
+          <article class="sol-card r-up" data-accent="violet">
+            <div class="sol-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M24 9 6 17l18 8 18-8-18-8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path class="pop" d="M13 21v8c0 2.6 4.9 5 11 5s11-2.4 11-5v-8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path class="pop-neon" d="M42 17v9" stroke-width="2.2" stroke-linecap="round"/>
+                <circle class="pop-neon-fill" cx="42" cy="28.5" r="2.2"/>
+              </svg>
+            </div>
+            <h3 class="sol-card__name">UNIVEXUS</h3>
+            <p class="sol-card__tag" data-i18n="sol.univexus.tag">Capacitação · Pessoas</p>
+            <p class="sol-card__desc" data-i18n="sol.univexus.desc">Conteúdo prático para capacitação, formação e atualização do seu time, de maneira ágil, aplicável e no ritmo da sua operação.</p>
+            <a class="sol-card__link" href="#contato"><span data-i18n="sol.know">Conhecer</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+
+          <!-- ABUNDANCE -->
+          <article class="sol-card r-up" data-accent="neon">
+            <div class="sol-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M24 6 41 16v16L24 42 7 32V16L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path class="pop" d="M24 30c-5-1-8-4.5-8-9 4 0 8 1.5 8 9Z" fill="currentColor" opacity=".16"/>
+                <path class="pop-neon" d="M24 31c5.5 0 9-3.8 9-9-5.5 0-9 3.8-9 9Zm0 0c0-3.4-2.2-6.4-5.4-7.6M24 31v6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="sol-card__name">ABUNDANCE</h3>
+            <p class="sol-card__tag" data-i18n="sol.abundance.tag">ESG · Créditos de carbono</p>
+            <p class="sol-card__desc" data-i18n="sol.abundance.desc">Créditos de carbono que impulsionam a restauração ambiental do Brasil por meio de um criptoativo seguro e eficiente.</p>
+            <a class="sol-card__link" href="https://abundancebrasil.com/" target="_blank" rel="noopener"><span data-i18n="sol.know">Conhecer</span> <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="section section--sobre" id="sobre">
+      <div class="container about">
+        <div class="about__media r-up">
+          <div class="about__video" id="aboutVideo">
+            <span class="about__video-glow" aria-hidden="true"></span>
+            <button class="about__video-trigger" type="button" data-yt="5dFqHCyiSxc" aria-label="Reproduzir o vídeo da Letwe no YouTube">
+              <img class="about__video-poster" src="https://i.ytimg.com/vi/5dFqHCyiSxc/maxresdefault.jpg" alt="Vídeo institucional da Letwe" loading="lazy" width="1280" height="720" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/5dFqHCyiSxc/hqdefault.jpg';" />
+              <span class="about__video-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="about__text r-up">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span data-i18n="about.eyebrow">Sobre nós</span></p>
+          <h2 class="sec-title" data-i18n="about.title">Ajudamos você a se tornar cada vez mais <em>digital</em>.</h2>
+          <p class="sec-lead" data-i18n="about.text">Com uma visão estratégica e contínua em transformação digital, nosso time de especialistas em logística atua no diagnóstico de problemas e na geração de oportunidades de negócio, com tecnologia aplicada de ponta a ponta.</p>
+          <ul class="about__list">
+            <li data-i18n="about.li1"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Diagnóstico e estratégia de ponta a ponta</li>
+            <li data-i18n="about.li2"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Ecossistema integrado de soluções</li>
+            <li data-i18n="about.li3"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Resultados sólidos e mensuráveis</li>
+          </ul>
+          <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=5531971326885&text=Ol%C3%A1!%20Quero%20conhecer%20a%20Letwe." target="_blank" rel="noopener"><span data-i18n="about.cta">Fale com a gente</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MOVIMENTO (CTA largo) ===================== -->
+    <section class="section section--move" id="movimento">
+      <div class="container move">
+        <div class="move__inner r-up">
+          <h2 class="move__title" data-i18n="move.title">Venha movimentar o Brasil e o mundo com a gente</h2>
+          <p class="move__text" data-i18n="move.text">Solucionamos os desafios das empresas com uma cultura pautada por resultados sólidos e foco em inovação.</p>
+          <a class="btn btn--neon" href="#solucoes"><span data-i18n="move.cta">Conheça o que fazemos</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DEPOIMENTOS ===================== -->
+    <section class="section section--depo" id="depoimentos">
+      <div class="container">
+        <header class="sec-head r-up">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span data-i18n="depo.eyebrow">Quem confia</span></p>
+          <h2 class="sec-title" data-i18n="depo.title">A <em>transformação digital</em> que nossos clientes alcançaram</h2>
+        </header>
+        <div class="depo-grid">
+          <figure class="depo r-up">
+            <div class="depo__quote" aria-hidden="true">&ldquo;</div>
+            <blockquote data-i18n="depo.q1">Nossa parceria sempre foi extremamente produtiva e eficiente. A equipe é muito capacitada e disposta a ajudar, e os produtos são de alto nível. Valorizamos muito essa parceria.</blockquote>
+            <figcaption class="depo__who">
+              <span class="depo__avatar" aria-hidden="true">FM</span>
+              <span><strong>Fernando Mourão</strong><small data-i18n="depo.q1role">Diretor Comercial · Grupo Delta Facilities</small></span>
+            </figcaption>
+          </figure>
+          <figure class="depo r-up">
+            <div class="depo__quote" aria-hidden="true">&ldquo;</div>
+            <blockquote data-i18n="depo.q2">A equipe do GTI PLUG é muito flexível e trabalha em prol das nossas necessidades como clientes.</blockquote>
+            <figcaption class="depo__who">
+              <span class="depo__avatar" aria-hidden="true">TT</span>
+              <span><strong>Tassia Tiemi</strong><small data-i18n="depo.q2role">BioGrow Brasil</small></span>
+            </figcaption>
+          </figure>
+          <figure class="depo r-up">
+            <div class="depo__quote" aria-hidden="true">&ldquo;</div>
+            <blockquote data-i18n="depo.q3">O GTI PLUG tem auxiliado muito numa necessidade que foge do sistema padrão de mercado. Tivemos um ganho enorme no processo logístico, com baixo custo de operação.</blockquote>
+            <figcaption class="depo__who">
+              <span class="depo__avatar" aria-hidden="true">KF</span>
+              <span><strong>Kenio Fonseca</strong><small data-i18n="depo.q3role">Amapá</small></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CLIENTES (marquee) ===================== -->
+    <section class="section section--clientes" id="clientes">
+      <div class="container">
+        <p class="clients-title r-up" data-i18n="clients.title">Marcas líderes movimentam com a Letwe</p>
+      </div>
+      <div class="marquee" aria-label="Clientes Letwe">
+        <!-- Logos oficiais (fundo removido) servidos de assets/logos.
+             A faixa repete o mesmo conjunto duas vezes para o loop contínuo;
+             a segunda cópia é aria-hidden para não duplicar p/ leitores de tela. -->
+        <div class="marquee__track">
+          <img class="marquee__logo" src="assets/logos/ambev.png" alt="Ambev" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/porsche.png" alt="Porsche" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/klabin.png" alt="Klabin" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/kuehne-nagel.png" alt="Kuehne+Nagel" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/brinks.png" alt="Brinks" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/delta.png" alt="Grupo Delta Facilities" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/codil.png" alt="Codil Alimentos" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/grupo-sa.png" alt="Grupo SA" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/tsv.png" alt="TSV Transportes Rápidos" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/fitoway.png" alt="Fitoway" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/abreu-e-lima.png" alt="Abreu e Lima Logística" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/amapa.png" alt="Amapá Instalações e Armazenagem" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/biogrow.png" alt="BioGrow Brasil" loading="lazy" />
+
+          <img class="marquee__logo" src="assets/logos/ambev.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/porsche.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/klabin.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/kuehne-nagel.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/brinks.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/delta.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/codil.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/grupo-sa.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/tsv.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/fitoway.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/abreu-e-lima.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/amapa.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="marquee__logo" src="assets/logos/biogrow.png" alt="" aria-hidden="true" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section section--faq" id="faq">
+      <div class="container faq">
+        <header class="sec-head sec-head--left r-up">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span data-i18n="faq.eyebrow">FAQ</span></p>
+          <h2 class="sec-title" data-i18n="faq.title">Perguntas frequentes</h2>
+          <p class="sec-lead" data-i18n="faq.lead">Tudo o que você precisa saber antes de acelerar a transformação digital da sua logística.</p>
+        </header>
+        <div class="faq__list r-up">
+          <details class="faq__item" open>
+            <summary><span data-i18n="faq.q1">O que é a Letwe?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p data-i18n="faq.a1">Somos uma plataforma de transformação digital para a logística. Reunimos um ecossistema de soluções que impacta positivamente a operação dos nossos clientes, otimizando tempo, recursos, custos e gerando inovação.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary><span data-i18n="faq.q2">Para quais empresas as soluções servem?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p data-i18n="faq.a2">De operações em crescimento a grandes indústrias e operadores logísticos. Marcas líderes como Ambev, Klabin, Porsche e Kuehne+Nagel já movimentam com a gente.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary><span data-i18n="faq.q3">Como funciona o GTI PLUG?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p data-i18n="faq.a3">É a nossa plataforma de gestão estratégica de armazenagem e movimentação de produtos: controle de estoque, endereçamento inteligente e indicadores de produtividade em tempo real, com baixo custo de operação.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary><span data-i18n="faq.q4">Vocês atendem em todo o Brasil?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p data-i18n="faq.a4">Sim. Atendemos operações em todo o Brasil e damos suporte a clientes que movimentam cargas para o mundo todo.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary><span data-i18n="faq.q5">Como eu começo?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p data-i18n="faq.a5">Fale com a gente pelo WhatsApp ou pelo formulário de contato. Fazemos um diagnóstico da sua operação e indicamos as soluções que mais geram resultado para o seu negócio.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="section section--cta" id="contato">
+      <div class="container">
+        <div class="cta-final r-up">
+          <div class="cta-final__glow" aria-hidden="true"></div>
+          <h2 class="cta-final__title" data-i18n="cta.title">Chegou a vez da sua empresa ir além do tradicional.</h2>
+          <p class="cta-final__text" data-i18n="cta.text">Alavanque a sua transformação digital com as melhores soluções para logística.</p>
+          <div class="cta-final__actions">
+            <a class="btn btn--primary btn--lg" href="https://api.whatsapp.com/send?phone=5531971326885&text=Ol%C3%A1!%20Vamos%20conversar%20sobre%20a%20transforma%C3%A7%C3%A3o%20digital%20da%20minha%20log%C3%ADstica%3F" target="_blank" rel="noopener"><span data-i18n="cta.cta">Vamos conversar?</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn--ghost btn--lg btn--ghost-dark" href="https://contate.me/letwe" target="_blank" rel="noopener" data-i18n="cta.alt">Outros canais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="foot">
+    <div class="container foot__inner">
+      <div class="foot__brand">
+        <img src="assets/img/letwe-logo-light.svg" alt="Letwe" width="150" height="51" />
+        <p data-i18n="foot.tagline">Transformação digital na logística. Um ecossistema de soluções que move o seu negócio, do armazém à frota, do time ao impacto.</p>
+        <div class="foot__social" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" stroke="currentColor" stroke-width="1.7"/><path d="M7 10v7M7 7.2v.1M11 17v-4a2 2 0 0 1 4 0v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 8h2V5h-2a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h2l1-3h-3V8a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="foot__col" aria-label="Navegação rodapé">
+        <h4 data-i18n="foot.nav">Navegação</h4>
+        <a href="#top" data-i18n="nav.home">Home</a>
+        <a href="#solucoes" data-i18n="nav.solutions">Soluções</a>
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+      </nav>
+
+      <nav class="foot__col" aria-label="Soluções">
+        <h4 data-i18n="foot.sol">Soluções</h4>
+        <a href="https://conteudo.letwe.com.br/gtiplug-gestao-de-estoque-e-armazem" target="_blank" rel="noopener">GTI PLUG</a>
+        <a href="#solucoes">COSMOS</a>
+        <a href="#solucoes">UNIVEXUS</a>
+        <a href="https://abundancebrasil.com/" target="_blank" rel="noopener">ABUNDANCE</a>
+      </nav>
+
+      <div class="foot__col">
+        <h4 data-i18n="foot.contact">Contato</h4>
+        <a href="https://api.whatsapp.com/send?phone=5531971326885&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Letwe." target="_blank" rel="noopener">WhatsApp · (31) 97132-6885</a>
+        <a href="https://contate.me/letwe" target="_blank" rel="noopener">contate.me/letwe</a>
+        <a class="foot__cta" href="https://api.whatsapp.com/send?phone=5531971326885" target="_blank" rel="noopener" data-i18n="nav.cta">Fale com a gente</a>
+      </div>
+    </div>
+    <div class="container foot__bottom">
+      <p>© <span id="year">2026</span> <strong>LETWE INNOVATION</strong></p>
+      <p class="foot__made" data-i18n="foot.made">Transformação digital na logística</p>
+    </div>
+  </footer>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" role="status" aria-label="Carregando experiência">
+    <div class="loader__brand">
+      <img src="assets/img/letwe-logo-light.svg" alt="Letwe" width="150" height="51" />
+    </div>
+    <div class="loader__track"><div class="loader__bar" id="loaderBar"></div></div>
+  </div>
+
+  <!-- Bibliotecas via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

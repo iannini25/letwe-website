@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://letwe.com.br/sitemap.xml

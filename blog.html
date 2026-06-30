@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Blog Letwe · Transformação digital na logística</title>
+  <meta name="description" content="Insights sobre WMS, frotas, pessoas e ESG na logística: conteúdo prático para acelerar a transformação digital da sua operação." />
+  <meta name="theme-color" content="#3A2259" />
+  <link rel="canonical" href="https://letwe.com.br/blog.html" />
+
+  <!-- Favicons / ícones -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://letwe.com.br/blog.html" />
+  <meta property="og:site_name" content="LETWE · Transformação digital na logística" />
+  <meta property="og:title" content="Blog Letwe · Insights em logística e transformação digital" />
+  <meta property="og:description" content="Conteúdo prático sobre WMS, frotas, pessoas e ESG para quem move o Brasil e o mundo." />
+  <meta property="og:image" content="https://letwe.com.br/assets/img/poster.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Letwe · Transformação digital na logística" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog Letwe · Insights em logística e transformação digital" />
+  <meta name="twitter:description" content="Conteúdo prático sobre WMS, frotas, pessoas e ESG para quem move o Brasil e o mundo." />
+  <meta name="twitter:image" content="https://letwe.com.br/assets/img/poster.jpg" />
+  <meta name="twitter:image:alt" content="Letwe · Transformação digital na logística" />
+
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduced');
+        var lang = localStorage.getItem('letwe-lang');
+        if (lang === 'en') d.setAttribute('lang', 'en');
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Dados estruturados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Letwe",
+    "url": "https://letwe.com.br/blog.html",
+    "description": "Insights sobre WMS, frotas, pessoas e ESG na logística.",
+    "inLanguage": "pt-BR",
+    "publisher": { "@type": "Organization", "name": "Letwe", "logo": { "@type": "ImageObject", "url": "https://letwe.com.br/assets/img/apple-touch-icon.png" } }
+  }
+  </script>
+</head>
+
+<body class="page-blog">
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="nav" id="nav" aria-label="Navegação principal">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="Letwe, página inicial">
+        <img class="brand__logo brand__logo--light" src="assets/img/letwe-logo-light.svg" alt="Letwe" width="132" height="45" />
+        <img class="brand__logo brand__logo--dark"  src="assets/img/letwe-logo.svg"       alt="Letwe" width="132" height="45" />
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#solucoes" data-i18n="nav.solutions">Soluções</a>
+        <a href="index.html#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="index.html#clientes" data-i18n="nav.clients">Clientes</a>
+        <a href="blog.html" class="is-current" data-i18n="nav.blog">Blog</a>
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" class="lang__btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+          <span class="lang__sep" aria-hidden="true"></span>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="nav__cta" href="https://api.whatsapp.com/send?phone=5531971326885&text=Ol%C3%A1!%20Estava%20no%20blog%20da%20Letwe%20e%20gostaria%20de%20saber%20mais." target="_blank" rel="noopener" data-i18n="nav.cta">Fale com a gente</a>
+      </nav>
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============================ BLOG HERO ============================ -->
+  <header class="blog-hero">
+    <div class="blog-hero__glow" aria-hidden="true"></div>
+    <div class="container">
+      <a class="blog-back" href="index.html"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="blog.back">Voltar ao site</span></a>
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__line" aria-hidden="true"></span><span data-i18n="blog.eyebrow">Blog Letwe</span></p>
+      <h1 class="blog-hero__title" data-i18n="blog.title">Insights em logística e transformação digital</h1>
+      <p class="blog-hero__lead" data-i18n="blog.lead">Conteúdo prático sobre WMS, frotas, pessoas e ESG para quem move o Brasil e o mundo.</p>
+    </div>
+  </header>
+
+  <!-- ============================ POSTS ============================ -->
+  <main class="blog-main">
+    <div class="container">
+
+      <!-- destaque -->
+      <article class="post-feat r-up">
+        <a class="post-feat__cover" href="post-transformacao-digital-logistica.html" aria-label="Ler artigo em destaque">
+          <span class="post-badge" data-i18n="blog.cat.digital">Transformação digital</span>
+          <svg viewBox="0 0 220 160" fill="none" aria-hidden="true">
+            <circle cx="110" cy="80" r="54" stroke="#fff" stroke-width="2" opacity=".25"/>
+            <circle cx="110" cy="80" r="30" stroke="#fff" stroke-width="2" opacity=".4"/>
+            <path d="M60 110 90 80l18 16 40-44" stroke="#76FF93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M138 52h12v12" stroke="#76FF93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="60" cy="110" r="4.5" fill="#fff"/><circle cx="90" cy="80" r="4.5" fill="#fff"/><circle cx="108" cy="96" r="4.5" fill="#fff"/>
+          </svg>
+        </a>
+        <div class="post-feat__body">
+          <span class="post-tag" data-i18n="blog.featured">Em destaque</span>
+          <h2><a class="card-link" href="post-transformacao-digital-logistica.html" data-i18n="blog.p1.title">O que é transformação digital na logística e por onde começar</a></h2>
+          <p data-i18n="blog.p1.desc">Da coleta de dados à automação: um guia direto para tirar a sua operação do modo tradicional.</p>
+          <a class="post-more" href="post-transformacao-digital-logistica.html"><span data-i18n="blog.read">Ler artigo</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <!-- grid -->
+      <div class="post-grid">
+        <!-- p2 WMS -->
+        <article class="post-card r-up">
+          <a class="post-card__cover post-card__cover--a" href="post-wms-controle-estoque-tempo-real.html" aria-label="Ler artigo: WMS na prática">
+            <span class="post-badge" data-i18n="blog.cat.wms">Armazém · WMS</span>
+            <svg viewBox="0 0 220 130" fill="none" aria-hidden="true">
+              <rect x="44" y="34" width="132" height="70" rx="3" stroke="#fff" stroke-width="2"/>
+              <path d="M44 58h132M88 34v70M132 34v70" stroke="#fff" stroke-width="2" opacity=".5"/>
+              <rect x="54" y="66" width="26" height="30" rx="2" fill="#76FF93" opacity=".85"/>
+              <rect x="98" y="66" width="26" height="30" rx="2" stroke="#fff" stroke-width="2"/>
+            </svg>
+          </a>
+          <div class="post-card__body">
+            <span class="post-cat" data-i18n="blog.cat.wms">Armazém · WMS</span>
+            <h3><a class="card-link" href="post-wms-controle-estoque-tempo-real.html" data-i18n="blog.p2.title">WMS na prática: controle de estoque em tempo real que reduz custos</a></h3>
+            <p data-i18n="blog.p2.desc">Como o endereçamento inteligente e os indicadores certos enxugam perdas no armazém.</p>
+            <span class="post-meta">6 <span data-i18n="blog.min">min de leitura</span></span>
+          </div>
+        </article>
+
+        <!-- p3 Frotas -->
+        <article class="post-card r-up">
+          <a class="post-card__cover post-card__cover--b" href="post-gestao-frotas-telemetria.html" aria-label="Ler artigo: Gestão de frotas inteligente">
+            <span class="post-badge" data-i18n="blog.cat.fleet">Frotas</span>
+            <svg viewBox="0 0 220 130" fill="none" aria-hidden="true">
+              <ellipse cx="110" cy="66" rx="74" ry="30" stroke="#fff" stroke-width="2" opacity=".4"/>
+              <ellipse cx="110" cy="66" rx="30" ry="74" stroke="#fff" stroke-width="2" opacity=".25" transform="rotate(60 110 66)"/>
+              <circle cx="110" cy="66" r="11" fill="#76FF93"/>
+              <circle cx="183" cy="55" r="4.5" fill="#fff"/><circle cx="40" cy="80" r="4" fill="#fff"/>
+            </svg>
+          </a>
+          <div class="post-card__body">
+            <span class="post-cat" data-i18n="blog.cat.fleet">Frotas</span>
+            <h3><a class="card-link" href="post-gestao-frotas-telemetria.html" data-i18n="blog.p3.title">Gestão de frotas inteligente: o que a telemetria revela</a></h3>
+            <p data-i18n="blog.p3.desc">Rotas, consumo e manutenção preditiva numa só visão para baixar o custo por entrega.</p>
+            <span class="post-meta">5 <span data-i18n="blog.min">min de leitura</span></span>
+          </div>
+        </article>
+
+        <!-- p4 Pessoas -->
+        <article class="post-card r-up">
+          <a class="post-card__cover post-card__cover--c" href="post-capacitacao-times-logisticos.html" aria-label="Ler artigo: Capacitação de times logísticos">
+            <span class="post-badge" data-i18n="blog.cat.people">Pessoas</span>
+            <svg viewBox="0 0 220 130" fill="none" aria-hidden="true">
+              <circle cx="84" cy="52" r="16" stroke="#fff" stroke-width="2"/>
+              <path d="M58 96c0-14 12-22 26-22s26 8 26 22" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="132" cy="58" r="12" stroke="#76FF93" stroke-width="2"/>
+              <path d="M114 92c0-11 8-18 18-18s18 7 18 18" stroke="#76FF93" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <div class="post-card__body">
+            <span class="post-cat" data-i18n="blog.cat.people">Pessoas</span>
+            <h3><a class="card-link" href="post-capacitacao-times-logisticos.html" data-i18n="blog.p4.title">Capacitação de times logísticos: o ativo que mais escala</a></h3>
+            <p data-i18n="blog.p4.desc">Por que treinar pessoas no ritmo da operação acelera resultados mais que qualquer ferramenta isolada.</p>
+            <span class="post-meta">4 <span data-i18n="blog.min">min de leitura</span></span>
+          </div>
+        </article>
+
+        <!-- p5 ESG -->
+        <article class="post-card r-up">
+          <a class="post-card__cover post-card__cover--d" href="post-creditos-carbono-logistica.html" aria-label="Ler artigo: Créditos de carbono na logística">
+            <span class="post-badge" data-i18n="blog.cat.esg">ESG</span>
+            <svg viewBox="0 0 220 130" fill="none" aria-hidden="true">
+              <path d="M110 36 142 54v36l-32 18-32-18V54l32-18Z" stroke="#fff" stroke-width="2" stroke-linejoin="round" opacity=".5"/>
+              <path d="M110 92c14 0 22-9 22-22-14 0-22 9-22 22Zm0 0c0-8-5-15-13-18M110 92v14" stroke="#76FF93" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="post-card__body">
+            <span class="post-cat" data-i18n="blog.cat.esg">ESG</span>
+            <h3><a class="card-link" href="post-creditos-carbono-logistica.html" data-i18n="blog.p5.title">Créditos de carbono na logística: ESG que vira vantagem</a></h3>
+            <p data-i18n="blog.p5.desc">Como transformar a agenda ambiental em diferencial competitivo com ativos seguros e rastreáveis.</p>
+            <span class="post-meta">5 <span data-i18n="blog.min">min de leitura</span></span>
+          </div>
+        </article>
+
+        <!-- p6 KPIs -->
+        <article class="post-card r-up">
+          <a class="post-card__cover post-card__cover--e" href="post-indicadores-armazem.html" aria-label="Ler artigo: 5 indicadores que todo armazém deveria acompanhar">
+            <span class="post-badge" data-i18n="blog.cat.kpi">Operação</span>
+            <svg viewBox="0 0 220 130" fill="none" aria-hidden="true">
+              <path d="M52 98h120" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+              <rect x="64" y="64" width="16" height="34" rx="2" fill="#fff" opacity=".6"/>
+              <rect x="98" y="48" width="16" height="50" rx="2" fill="#fff" opacity=".6"/>
+              <rect x="132" y="74" width="16" height="24" rx="2" fill="#fff" opacity=".6"/>
+              <path d="M64 78 106 56l34 10 28-26" stroke="#76FF93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="post-card__body">
+            <span class="post-cat" data-i18n="blog.cat.kpi">Operação</span>
+            <h3><a class="card-link" href="post-indicadores-armazem.html" data-i18n="blog.p6.title">5 indicadores que todo armazém deveria acompanhar</a></h3>
+            <p data-i18n="blog.p6.desc">OTIF, acuracidade de estoque, produtividade e mais: o que medir para evoluir todo dia.</p>
+            <span class="post-meta">7 <span data-i18n="blog.min">min de leitura</span></span>
+          </div>
+        </article>
+      </div>
+
+      <!-- CTA inline -->
+      <div class="blog-cta r-up">
+        <div>
+          <h2 data-i18n="cta.title">Chegou a vez da sua empresa ir além do tradicional.</h2>
+          <p data-i18n="cta.text">Alavanque a sua transformação digital com as melhores soluções para logística.</p>
+        </div>
+        <a class="btn btn--primary btn--lg" href="https://api.whatsapp.com/send?phone=5531971326885" target="_blank" rel="noopener"><span data-i18n="cta.cta">Vamos conversar?</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="foot">
+    <div class="container foot__inner">
+      <div class="foot__brand">
+        <img src="assets/img/letwe-logo-light.svg" alt="Letwe" width="150" height="51" />
+        <p data-i18n="foot.tagline">Transformação digital na logística. Um ecossistema de soluções que move o seu negócio: do armazém à frota, do time ao impacto.</p>
+        <div class="foot__social" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" stroke="currentColor" stroke-width="1.7"/><path d="M7 10v7M7 7.2v.1M11 17v-4a2 2 0 0 1 4 0v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 8h2V5h-2a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h2l1-3h-3V8a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <nav class="foot__col" aria-label="Navegação rodapé">
+        <h4 data-i18n="foot.nav">Navegação</h4>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="index.html#solucoes" data-i18n="nav.solutions">Soluções</a>
+        <a href="index.html#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+      </nav>
+      <nav class="foot__col" aria-label="Soluções">
+        <h4 data-i18n="foot.sol">Soluções</h4>
+        <a href="https://conteudo.letwe.com.br/gtiplug-gestao-de-estoque-e-armazem" target="_blank" rel="noopener">GTI PLUG</a>
+        <a href="index.html#solucoes">COSMOS</a>
+        <a href="index.html#solucoes">UNIVEXUS</a>
+        <a href="https://abundancebrasil.com/" target="_blank" rel="noopener">ABUNDANCE</a>
+      </nav>
+      <div class="foot__col">
+        <h4 data-i18n="foot.contact">Contato</h4>
+        <a href="https://api.whatsapp.com/send?phone=5531971326885" target="_blank" rel="noopener">WhatsApp · (31) 97132-6885</a>
+        <a href="https://contate.me/letwe" target="_blank" rel="noopener">contate.me/letwe</a>
+      </div>
+    </div>
+    <div class="container foot__bottom">
+      <p>© <span id="year">2026</span> <strong>LETWE INNOVATION</strong></p>
+      <p class="foot__made" data-i18n="foot.made">Transformação digital na logística</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

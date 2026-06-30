@@ -1,0 +1,15 @@
+# Claude / local tooling
+.claude/
+
+# Pasta não relacionada ao site (projeto à parte)
+ERROS IBA 1/
+
+# Dependências (não usadas no repo, mas por segurança)
+node_modules/
+
+# Sistema operacional / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
