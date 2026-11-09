@@ -85,6 +85,7 @@
       "foot.sol": "Soluções",
       "foot.contact": "Contato",
       "foot.made": "Transformação digital na logística",
+      "foot.signBy": "Feito por",
 
       "blog.eyebrow": "Blog Letwe",
       "blog.title": "Insights em logística e transformação digital",
@@ -191,6 +192,7 @@
       "foot.sol": "Solutions",
       "foot.contact": "Contact",
       "foot.made": "Digital transformation in logistics",
+      "foot.signBy": "Made by",
 
       "blog.eyebrow": "Letwe Blog",
       "blog.title": "Insights on logistics and digital transformation",
